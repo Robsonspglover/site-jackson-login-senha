@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bitcount Single", system-ui;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3ff00, #f80000);
+    position: relative;
+}
+
+.estrelas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(1px 1px at 25% 15%, #fff, transparent),
+        radial-gradient(1px 1px at 50% 40%, #fff, transparent),
+        radial-gradient(2px 2px at 15% 15%, #c3ff00, transparent),
+        radial-gradient(1px 1px at 70% 25%, #fff, transparent),
+        radial-gradient(1.5px 1.5px at 85% 60%, #fff, transparent),
+        radial-gradient(1px 1px at 35% 75%, #ffaa00, transparent),
+        radial-gradient(1.5px 1.5px at 90% 10%, #fff, transparent),
+        radial-gradient(2px 2px at 5% 30%, #00d2d2, transparent),
+        radial-gradient(1px 1px at 60% 20%, #00ccff, transparent);
+}
+
+.formulario{
+    width: 400px;
+    background-color: black;
+    border: 1px solid rgb(255, 0, 0);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    color: #c3ff00;
+    border-radius: 16px;
+    padding: 35px;
+}
+
+.formulario h1{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.caixa-formulario{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.caixa-formulario input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #c3ff00;
+    background-color: green;
+    font-size: 16px;
+    padding: 0 20px;
+}
+
+.caixa-formulario input::placeholder{
+color: #c3ff00;
+}
+
+.i{
+position: absolute;
+right: 20px;
+font-size: 50px;
+top: 25%;
+}
+
+.caixa{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 25px;
+font-size: 16px;
+}
+
+.caixa label{
+display: flex;
+align-items: center;
+gap: 5px;
+}
+
+.caixa label input{
+accent-color: rgba(220, 38, 38, 0.729);
+
+}
+
+.caixa a{
+    text-decoration: none;
+    color: rgb(173, 148, 148);
+}
+
+.caixa a:hover{
+    text-decoration: underline;
+}
+
+button {
+width: 100% ;
+height: 45px;
+background-color: rgb(255, 190, 70);
+border: none;
+border-radius: 10px;
+outline:none ;
+cursor: pointer;
+color: rgb(140, 0, 255);
+font-size: 10px; 
+font-weight: 20px;
+transition: all 0.5s;
+}
+
+button :hover{
+background-color: #fff;
+transform: translate(-5px);
+}
+
+link-registro {
+    text-align: center ;
+    margin-top: 25px ;
+    font-size: 14px;
+}
+
+link-registro a {
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+}
